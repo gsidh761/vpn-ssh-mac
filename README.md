@@ -20,10 +20,10 @@ sudo mv connect.sh /usr/local/bin/connect
 ```
 
 **Quick Start:**  
+``` 
+./connect.sh 
 ```
-./connect.sh (from where the script is stored)
+or if moved (from anywhere):
 ```
-or if moved:
-```
-connect (from anywhere)
+connect 
 ```
