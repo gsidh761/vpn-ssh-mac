@@ -37,9 +37,8 @@ cleanup() {
         quit_vpn_app
         exit 0
     else
-        echo "VPN Is Still Connected. Trying Again..."
+        echo "VPN Is Still Connected. Quitting VPN Application..."
 	quit_vpn_app
-        cleanup
     fi
 }
 
