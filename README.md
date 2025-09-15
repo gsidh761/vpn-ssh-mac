@@ -27,3 +27,7 @@ or if moved (from anywhere):
 ```
 connect 
 ```
+
+**Todo:**  
+1. Better detection system to check if the VPN has been disconnected or not
+```
