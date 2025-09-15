@@ -30,4 +30,3 @@ connect
 
 **Todo:**  
 1. Better detection system to check if the VPN has been disconnected or not
-```
