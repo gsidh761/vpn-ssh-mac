@@ -5,7 +5,7 @@
 1. You need to have Tunnelblick installed and configured to use the macovpn-config
 2. Run the following command in Terminal:
 ```
-wget https:raw.githubusercontent.com/gsidh761/vpn-ssh-mac/refs/heads/main/connect.sh -O connect.sh
+wget https://raw.githubusercontent.com/gsidh761/vpn-ssh-mac/refs/heads/main/connect.sh
 ```
 3. Edit the connect.sh file and replace $SSH_AUTH with your Mount Royal SSH auth (username@server)
 4. Make the script executable:
