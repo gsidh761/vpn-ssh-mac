@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# Auto Connect
-# Type connect In Terminal To Start The Tunnellblick VPN Service & SSH 
-
-# Currently It Only Works On MacOS (Due To Osascript)
-# Doesn't Require Any Third Party Packages (Aside From The Tunnelblick Application)
-
 # Gsidh761
 
 clear 
@@ -37,7 +31,6 @@ cleanup() {
     echo "Stopping VPN Service..."
     osascript -e 'tell application "Tunnelblick" to disconnect all' 2>/dev/null
 
-    # TODO: This doesn't work well. 
     if [ $? -eq 0 ]; then
         echo "VPN Has Been Disconnected. Quitting..."
         free_port
