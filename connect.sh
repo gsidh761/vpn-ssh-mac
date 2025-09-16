@@ -55,4 +55,4 @@ free_port
 clear
 echo "SSH Connecting..."
 
-ssh $SSH_AUTH -o ConnectTimeout=25 -o BatchMode=yes 
+ssh $SSH_AUTH -o ConnectTimeout=25
