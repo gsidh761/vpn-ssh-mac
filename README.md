@@ -1,7 +1,7 @@
 # VPN SSH Mac  
 ### One-command VPN start + SSH connection  
 
-**Setup Guide**
+**Setup/Update Guide**
 1. You need to have Tunnelblick installed and configured to use the macovpn-config
 2. Run the following command in Terminal:
 ```
