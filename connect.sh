@@ -3,6 +3,9 @@
 # Gsidh761
 
 clear 
+echo "Restarting Network Service..."
+networksetup -setairportpower en0 off && networksetup -setairportpower en0 on
+echo ""
 echo "Starting VPN Service..."
 
 # Start VPN Service
