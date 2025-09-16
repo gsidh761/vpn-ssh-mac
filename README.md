@@ -1,4 +1,4 @@
-# VPN SSH Mac  
+# Auto VPN + SSH Mac  
 ### One-command VPN start + SSH connection  
 
 **Setup/Update Guide**
