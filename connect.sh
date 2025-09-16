@@ -32,7 +32,7 @@ cleanup() {
     osascript -e 'tell application "Tunnelblick" to disconnect all' 2>/dev/null
 
     if [ $? -eq 0 ]; then
-        echo "VPN Has Been Disconnected. Quitting..."
+        echo "VPN Has Been Disconnected. Quitting Program..."
         free_port
         quit_vpn_app
         exit 0
