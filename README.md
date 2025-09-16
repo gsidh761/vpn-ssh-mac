@@ -21,3 +21,4 @@ connect
 **Todo:**  
 1. Better detection system to check if the VPN has been disconnected or not
 2. Check for SSH timeout?
+3. Delete the install.sh file after the installation has been completed
