@@ -20,3 +20,4 @@ connect
 
 **Todo:**  
 1. Better detection system to check if the VPN has been connected or disconnected
+2. Terminate OpenVPN when freeing the port
