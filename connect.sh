@@ -6,6 +6,17 @@ clear
 echo "Restarting Network Service..."
 networksetup -setairportpower en0 off && networksetup -setairportpower en0 on
 echo ""
+
+# Check if Wi-Fi is up before proceeding
+echo "Checking Wi-Fi status..."
+WIFI_STATUS=$(networksetup -getairportpower en0 | awk '{print $4}')
+
+if [ "$WIFI_STATUS" != "On" ]; then
+    echo "Wi-Fi is OFF. Waiting..."
+fi
+echo "Wi-Fi is ON. Proceeding..."
+echo ""
+
 echo "Starting VPN Service..."
 
 # Start VPN Service
@@ -41,7 +52,7 @@ cleanup() {
         exit 0
     else
         echo "VPN Is Still Connected. Quitting VPN Application..."
-	quit_vpn_app
+        quit_vpn_app
     fi
 }
 
@@ -54,11 +65,7 @@ clear
 free_port
 
 # Starts SSH 
-
 clear
 echo "SSH Connecting..."
 
 ssh $SSH_AUTH -o ConnectTimeout=25 -o BatchMode=yes -o StrictHostKeyChecking=no
-
-
-
