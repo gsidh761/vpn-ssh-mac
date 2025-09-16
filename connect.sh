@@ -55,7 +55,7 @@ free_port
 clear
 echo "SSH Connecting..."
 
-ssh $SSH_AUTH -o ConnectTimeout=15 -o BatchMode=yes -o StrictHostKeyChecking=no
+ssh $SSH_AUTH -o ConnectTimeout=25 -o BatchMode=yes -o StrictHostKeyChecking=no
 
 
 
