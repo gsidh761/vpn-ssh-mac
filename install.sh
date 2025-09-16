@@ -45,8 +45,10 @@ else
     echo "./connect.sh"
 fi
 
+# Asks if the user would like to delete the script installer
 read -p "Delete installation script (y/n): " DELETE_CHOICE
 if [[ "$DELETE_CHOICE" == "y" || "$DELETE_CHOICE" == "Y" ]]; then
     echo "Installer script deleted."
+    rm install.sh
 fi
 
