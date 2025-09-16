@@ -53,7 +53,7 @@ free_port
 # Starts SSH 
 
 clear
-echo "SSH Starting..."
+echo "SSH Connecting..."
 
 ssh $SSH_AUTH
 
