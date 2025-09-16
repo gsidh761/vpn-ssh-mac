@@ -45,3 +45,8 @@ else
     echo "./connect.sh"
 fi
 
+read -p "Delete installation script (y/n): " DELETE_CHOICE
+if [[ "$DELETE_CHOICE" == "y" || "$DELETE_CHOICE" == "Y" ]]; then
+    echo "Installer script deleted."
+fi
+
