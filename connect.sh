@@ -2,7 +2,7 @@
 
 # Gsidh761
 
-sudo
+sudo 
 
 clear 
 echo "Starting VPN Service..."
