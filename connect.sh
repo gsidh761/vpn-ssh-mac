@@ -22,6 +22,7 @@ sleep 5
 free_port(){
     echo "Killing Any Pid's On Port 22 (SSH)"
     sudo lsof -ti :22 | xargs sudo kill -9 2>/dev/null
+	sudo ps aux | grep '[o]penvpn' | awk '{print $2}' | xargs sudo kill -9
 }
 
 # Quit Tunnelblick
