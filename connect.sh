@@ -7,6 +7,8 @@ sudo
 clear 
 echo "Starting VPN Service..."
 
+free_port
+
 # Start VPN Service
 osascript -e 'tell application "Tunnelblick"
     disconnect "macovpn-config"
@@ -57,8 +59,6 @@ trap cleanup SIGINT SIGTSTP EXIT
 
 sleep 2
 clear
-
-free_port
 
 # Starts SSH 
 
