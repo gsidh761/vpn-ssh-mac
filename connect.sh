@@ -8,7 +8,11 @@ clear
 echo "Starting VPN Service..."
 
 # Start VPN Service
-osascript -e 'tell application "Tunnelblick" to connect "macovpn-config"' 2>/dev/null
+osascript -e 'tell application "Tunnelblick"
+    disconnect "macovpn-config"
+    delay 2
+    connect "macovpn-config"
+end tell'
 if [ $? -eq 0 ]; then
     echo "VPN Has Been Connected. Proceeding..."
 else
