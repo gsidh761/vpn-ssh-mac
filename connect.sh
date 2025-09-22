@@ -2,6 +2,8 @@
 
 # Gsidh761
 
+sudo
+
 clear 
 echo "Starting VPN Service..."
 
@@ -32,7 +34,8 @@ cleanup() {
     echo
     echo "Stopping VPN Service..."
     osascript -e 'tell application "Tunnelblick" to disconnect all' 2>/dev/null
-
+	sudo ps aux | grep '[o]penvpn' | awk '{print $2}' | xargs sudo kill -9
+	
     if [ $? -eq 0 ]; then
         echo "VPN Has Been Disconnected. Quitting Program..."
         free_port
