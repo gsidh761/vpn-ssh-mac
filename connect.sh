@@ -14,6 +14,8 @@ else
     exit 1
 fi
 
+sleep 5
+
 # Free Any Open Ports (:22)
 free_port(){
     echo "Killing Any Pid's On Port 22 (SSH)"
